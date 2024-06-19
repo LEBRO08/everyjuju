@@ -79,7 +79,7 @@ async def on_message(message):
                 if channel and extracted_text is not None:  # Ensure extracted_text is not None
     #async with channel.typing():
                         await asyncio.sleep(random.randint(2, 5))
-                        await channel.send(f"<@740547277164249089> sat rb7t {extracted_text}")
+                        await channel.send(f"<@740547277164249089> hmdlh rb7t {extracted_text}")
 
             elif client.user.mentioned_in(message) and "Airdrop collected" in embed.description:
                 response = random.choice(responses)
@@ -95,7 +95,7 @@ async def on_message(message):
                 if channel and extracted_text is not None:  # Ensure extracted_text is not None
                     async with channel.typing():
                         await asyncio.sleep(random.randint(3, 7))
-                        await channel.send(f"<@740547277164249089> rani jbt lik {extracted_text} atbi")
+                        await channel.send(f"<@740547277164249089> hmdlh dit {extracted_text} f airdrop")
                         await asyncio.sleep(random.randint(3, 7))
 
     # Define probabilities for sending a message and adding a reaction
