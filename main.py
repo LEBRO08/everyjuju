@@ -13,7 +13,7 @@ from settings import (
     extract_text_between_parentheses
 )
 
-emoji_options = ['❤', '💙', '🐟', '🚀']
+emoji_options = ['❤', '💙', '🐟', '🚀', '🔥']
 
 responses = [
     "thx",
