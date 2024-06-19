@@ -136,7 +136,7 @@ async def on_message(message):
                     print("Prize value is not more than $0.1, skipping entry.")
                     break  # Exit the loop if prize value is not above $0.1
 
-        # Processing airdrop created messages
+        # Processing airdrop 1$ or more only
         for embed in message.embeds:
             response = random.choice(responses)
             if "Airdrop created" in embed.description:
