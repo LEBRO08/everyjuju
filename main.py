@@ -89,14 +89,14 @@ async def on_message(message):
                     print(f"Extracted text: {extracted_text}")
     
                 # Send a message to a specific channel after processing
-                channel_id = 1252731072081428500
-                channel = client.get_channel(channel_id)
+           #     channel_id = 1252731072081428500
+           #     channel = client.get_channel(channel_id)
                 
-                if channel and extracted_text is not None:  # Ensure extracted_text is not None
-                    async with channel.typing():
-                        await asyncio.sleep(random.randint(3, 7))
-                        await channel.send(f"<@740547277164249089> hmdlh dit {extracted_text} f airdrop")
-                        await asyncio.sleep(random.randint(3, 7))
+          #      if channel and extracted_text is not None:  # Ensure extracted_text is not None
+          #          async with channel.typing():
+          #              await asyncio.sleep(random.randint(3, 7))
+         #               await channel.send(f"<@740547277164249089> hmdlh dit {extracted_text} f airdrop")
+         #               await asyncio.sleep(random.randint(3, 7))
 
     # Define probabilities for sending a message and adding a reaction
                 send_message_probability = 0.2  # 20% chance to send a message
