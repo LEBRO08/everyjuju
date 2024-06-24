@@ -69,18 +69,6 @@ async def on_message(message):
                 except Exception as e:
                     print(f"Failed to add reaction: {e}")
 
-                # Send a message to a specific channel after processing
-                channel_id = 1252625826109722664
-                channel = client.get_channel(channel_id)
-                
-                if extracted_text:
-                    print(f"Extracted text: {extracted_text}")
-    
-                if channel and extracted_text is not None:  # Ensure extracted_text is not None
-    #async with channel.typing():
-                        await asyncio.sleep(random.randint(2, 5))
-                        await channel.send(f"<@740547277164249089> hmdlh rb7t {extracted_text}")
-
             elif client.user.mentioned_in(message) and "Airdrop collected" in embed.description:
                 response = random.choice(responses)
                 extracted_text = extract_text_between_parentheses(embed.description)
